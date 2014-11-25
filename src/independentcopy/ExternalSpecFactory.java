@@ -28,7 +28,11 @@ public abstract class ExternalSpecFactory {
         // First read config setting in properties file
 //        File file = new File("/temp/config.properties");
         File file = new File("src/config.properties");
+        
+        //props will contain key value pairs on properties file.
         Properties props = new Properties();
+        
+        
         FileInputStream inFile;
         try {
             inFile = new FileInputStream(file);
